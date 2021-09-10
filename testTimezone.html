@@ -124,11 +124,11 @@
   <script>
     var app = angular.module("myApp", ['angularMoment']);
     app.controller("mainController", function($scope,$interval) {
-      $scope.backendTime = '2021-06-25T15:12:00Z';
+      $scope.backendTime = '2021-09-10T10:17:59.624234800Z';
       $scope.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-      $scope.time = moment("2021-06-25T15:12:00Z").tz($scope.timezone).format('MMMM DD, yyyy hh:mm:ss A');
+      $scope.time = moment("2021-09-10T10:17:59.624234800Z").tz($scope.timezone).format('MMMM DD, yyyy hh:mm:ss A');
       $scope.changeTimezone = (data) => {
-        $scope.time = moment("2021-06-25T15:12:00Z").tz(data).format('MMMM DD, yyyy hh:mm:ss A');
+        $scope.time = moment("2021-09-10T10:17:59.624234800Z").tz(data).format('MMMM DD, yyyy hh:mm:ss A');
         console.log($scope.time);
       }
     });
