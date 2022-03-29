@@ -1513,8 +1513,8 @@
       }
 
       $scope.convertTime = (data) => {
-        $scope.timeToConvert.ist = moment(data.time).tz('Asia/Kolkata').format();
-        $scope.timeToConvert.edt = moment(data.time).tz('America/Detroit').format();
+        $scope.timeToConvert.ist = moment(data.time).tz('Asia/Kolkata').format("dddd MMMM Do YYYY, h:mm:ss A z");
+        $scope.timeToConvert.edt = moment(data.time).tz('America/Detroit').format("dddd MMMM Do YYYY, h:mm:ss A z");
         $scope.$apply();
       }
     });
